@@ -1,43 +1,43 @@
-# lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'Princes Street']
+lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'Princes Street']
 
-# puts lines.length
+puts lines.length
 
-# lines[1]
+lines[1]
 
-# #haven't answered 3 yet
+#haven't answered 3 yet
 
-# lines.index("Haymarket")
+lines.index("Haymarket")
 
-# lines.unshift("Airport")
+lines.unshift("Airport")
 
-# lines.shift("York Place")
+lines.shift("York Place")
 
-# lines.delete("Edinburgh Park")
+lines.delete("Edinburgh Park")
 
-# lines.delete_at(1)
+lines.delete_at(1)
 
-# lines.reverse
+lines.reverse
 
-# for stops in lines
-#   puts stops
-# end
-
-
+for stops in lines
+  puts stops
+end
 
 
 
 
-# my_hash = {0 => "Zero", 1 => "One", :two => "Two", "two" => 2}
 
-# puts my_hash[1]
 
-# puts my_hash[:two]
+my_hash = {0 => "Zero", 1 => "One", :two => "Two", "two" => 2}
 
-# puts my_hash["two"]
+puts my_hash[1]
 
-# my_hash[3] = "Three"
+puts my_hash[:two]
 
-# my_hash[:four] = 4
+puts my_hash["two"]
+
+my_hash[3] = "Three"
+
+my_hash[:four] = 4
 
 
 users = {
@@ -73,6 +73,24 @@ users = {
 }
 
 
+puts users["Jonathan"][:twitter]
+
+puts users["Erik"][:home_town]
+
+print users["Erik"][:favourite_numbers]
+puts 
+
+puts users["Avril"][:pets]["colin"]
+
+numbers = users["Erik"][:favourite_numbers]
+numbers.sort!
+puts numbers[0]
+
+not_odd = users["Avril"][:favourite_numbers]
+
+
+ascension = users["Jonathan"][:favourite_numbers]
+puts ascension.sort.uniq
 
 new_number = [7]
 users ["Erik"][:favourite_numbers].push(new_number)
@@ -100,23 +118,3 @@ new_user = {
 
 users.merge!(new_user)
 puts users
-# puts users["Jonathan"][:twitter]
-
-# puts users["Erik"][:home_town]
-
-# print users["Erik"][:favourite_numbers]
-# puts 
-
-# puts users["Avril"][:pets]["colin"]
-
-# numbers = users["Erik"][:favourite_numbers]
-# numbers.sort!
-# puts numbers[0]
-
-# not_odd = users["Avril"][:favourite_numbers]
-
-
-# ascension = users["Jonathan"][:favourite_numbers]
-# puts ascension.sort.uniq
-
-# # users["Erik"][:favourite_numbers][7]
