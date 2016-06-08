@@ -89,7 +89,7 @@ my_hash[3] = "Three"
 
 my_hash[:four] = 4
 
- 
+
 
 
 ### C. Given the following data structure:
@@ -129,9 +129,25 @@ my_hash[:four] = 4
 ```
 
 1. Return Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
+
+users["Jonathan"][:twitter]
+
+
 2. Return Erik's hometown 
+
+users["Erik"][:home_town]
+
+
 3. Return the array of Erik's favorite numbers
+
+users["Erik"][:favourite_numbers]
+
+
 4. Return the type of Avril's pet Colin
+
+users["Avril"][:pets]["colin"]
+
+
 5. Return the smallest of Erik's favorite numbers
 6. Return an array of Avril's favorite numbers that are even 
 7. Return an array of Jonathans favourite numbers, sorted in ascending order and excluding duplicates
