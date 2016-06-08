@@ -72,6 +72,34 @@ users = {
   },
 }
 
+
+
+new_number = [7]
+users ["Erik"][:favourite_numbers].push(new_number)
+puts users["Erik"][:favourite_numbers]
+
+users ["Erik"][:home_town] = "Edinburgh"
+puts users["Erik"][:home_town]
+
+
+new_pet = { "fluffy" => :dog }
+users ["Erik"][:pets].merge!(new_pet)
+puts users["Erik"][:pets]
+
+new_user = {
+  "Euan" => {
+    :twitter => "no thanks",
+    :favourite_numbers => [-123128319027418247913, -2353472589329-23534578342],
+    :home_town => "Aberdeen pal",
+    :pets => {
+      "spud" => :cat,
+      "murphy" => :cat
+    }
+  },
+}
+
+users.merge!(new_user)
+puts users
 # puts users["Jonathan"][:twitter]
 
 # puts users["Erik"][:home_town]
@@ -85,32 +113,10 @@ users = {
 # numbers.sort!
 # puts numbers[0]
 
-# # not_odd = users["Avril"][:favourite_numbers].select {
-# #   |k, v| v % 2 == 0
-# # }
-# # puts not_odd
-
-
+# not_odd = users["Avril"][:favourite_numbers]
 
 
 # ascension = users["Jonathan"][:favourite_numbers]
 # puts ascension.sort.uniq
 
 # # users["Erik"][:favourite_numbers][7]
-
-new_number = [7]
-users ["Erik"][:favourite_numbers].push(new_number)
-puts users["Erik"][:favourite_numbers]
-
-
-
-
-
-
-
-
-
-
-
-
-

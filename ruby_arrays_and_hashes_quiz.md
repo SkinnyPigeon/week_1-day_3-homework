@@ -175,15 +175,31 @@ puts users["Erik"][:favourite_numbers]
 
 9. Change Erik's hometown to Edinburgh
 
-
+users ["Erik"][:home_town] = "Edinburgh"
+puts users["Erik"][:home_town]
 
 
 10. Add a pet dog to Erik called "Fluffy"
 
-
+new_pet = { "fluffy" => :dog }
+users ["Erik"][:pets].merge!(new_pet)
+puts users["Erik"][:pets]
 
 
 11. Add yourself to the users hash
 
+new_user = {
+  "Euan" => {
+    :twitter => "no thanks",
+    :favourite_numbers => [-123128319027418247913, -2353472589329-23534578342],
+    :home_town => "Aberdeen pal",
+    :pets => {
+      "spud" => :cat,
+      "murphy" => :cat
+    }
+  },
+}
 
+users.merge!(new_user)
+puts users
 
