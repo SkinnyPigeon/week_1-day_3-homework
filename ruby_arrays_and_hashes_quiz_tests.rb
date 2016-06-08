@@ -1,32 +1,35 @@
-lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'Princes Street']
+# lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'Princes Street']
 
-puts lines.length
+# puts lines.length
 
-lines[1]
+# lines[1]
 
-#haven't answered 3 yet
+# #haven't answered 3 yet
 
-lines.index("Haymarket")
+# lines.index("Haymarket")
 
-lines.unshift("Airport")
+# lines.unshift("Airport")
 
-lines.shift("York Place")
+# lines.shift("York Place")
 
-lines.delete("Edinburgh Park")
+# lines.delete("Edinburgh Park")
 
-lines.delete_at(1)
+# lines.delete_at(1)
 
-lines.reverse
+# lines.reverse
 
-for stops in lines
-  puts stops
-end
-
-
+# for stops in lines
+#   puts stops
+# end
 
 
 
 
+
+
+my_hash = {0 => "Zero", 1 => "One", :two => "Two", "two" => 2}
+
+puts my_hash[1]
 
 
 
