@@ -149,11 +149,38 @@ users["Avril"][:pets]["colin"]
 
 
 5. Return the smallest of Erik's favorite numbers
-6. Return an array of Avril's favorite numbers that are even 
+
+numbers = users["Erik"][:favourite_numbers]
+numbers.sort!
+puts numbers[0]
+
+
+6. Return an array of Avril's favorite numbers that are even
+
+#could not figure this one out. I created a variable that contained the array but could not find a way to separate only the even numbers. I tried a couple loops plus an .each do as well as trying to .split it. :(
+
+
 7. Return an array of Jonathans favourite numbers, sorted in ascending order and excluding duplicates
+
+ascension = users["Jonathan"][:favourite_numbers]
+puts ascension.sort.uniq
+
+
 8. Add the number `7` to Erik's favorite numbers
+
+
+
+
 9. Change Erik's hometown to Edinburgh
+
+
+
+
 10. Add a pet dog to Erik called "Fluffy"
+
+
+
+
 11. Add yourself to the users hash
 
 

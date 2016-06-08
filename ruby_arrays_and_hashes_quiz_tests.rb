@@ -81,10 +81,22 @@ puts
 
 puts users["Avril"][:pets]["colin"]
 
+numbers = users["Erik"][:favourite_numbers]
+numbers.sort!
+puts numbers[0]
+
+# not_odd = users["Avril"][:favourite_numbers].select {
+#   |k, v| v % 2 == 0
+# }
+# puts not_odd
 
 
 
 
+ascension = users["Jonathan"][:favourite_numbers]
+puts ascension.sort.uniq
+
+# users["Erik"][:favourite_numbers][7]
 
 
 
