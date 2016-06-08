@@ -72,33 +72,35 @@ users = {
   },
 }
 
-puts users["Jonathan"][:twitter]
+# puts users["Jonathan"][:twitter]
 
-puts users["Erik"][:home_town]
+# puts users["Erik"][:home_town]
 
-print users["Erik"][:favourite_numbers]
-puts 
+# print users["Erik"][:favourite_numbers]
+# puts 
 
-puts users["Avril"][:pets]["colin"]
+# puts users["Avril"][:pets]["colin"]
 
-numbers = users["Erik"][:favourite_numbers]
-numbers.sort!
-puts numbers[0]
+# numbers = users["Erik"][:favourite_numbers]
+# numbers.sort!
+# puts numbers[0]
 
-# not_odd = users["Avril"][:favourite_numbers].select {
-#   |k, v| v % 2 == 0
-# }
-# puts not_odd
-
-
+# # not_odd = users["Avril"][:favourite_numbers].select {
+# #   |k, v| v % 2 == 0
+# # }
+# # puts not_odd
 
 
-ascension = users["Jonathan"][:favourite_numbers]
-puts ascension.sort.uniq
-
-# users["Erik"][:favourite_numbers][7]
 
 
+# ascension = users["Jonathan"][:favourite_numbers]
+# puts ascension.sort.uniq
+
+# # users["Erik"][:favourite_numbers][7]
+
+new_number = [7]
+users ["Erik"][:favourite_numbers].push(new_number)
+puts users["Erik"][:favourite_numbers]
 
 
 

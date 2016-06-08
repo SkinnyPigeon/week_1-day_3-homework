@@ -168,7 +168,9 @@ puts ascension.sort.uniq
 
 8. Add the number `7` to Erik's favorite numbers
 
-
+new_number = [7]
+users ["Erik"][:favourite_numbers].push(new_number)
+puts users["Erik"][:favourite_numbers]
 
 
 9. Change Erik's hometown to Edinburgh
